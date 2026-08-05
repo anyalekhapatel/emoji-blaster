@@ -7,6 +7,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Dictionary,
 		C3.Plugins.Keyboard,
 		C3.Plugins.Arr,
+		C3.Plugins.Audio,
 		C3.Plugins.TextBox.Acts.SetText,
 		C3.Plugins.Arr.Acts.Clear,
 		C3.Plugins.Text.Cnds.CompareInstanceVar,
@@ -40,6 +41,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.TextBox.Exps.Text,
 		C3.Plugins.Text.Acts.Destroy,
 		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.System.Exps.find,
 		C3.Plugins.Text.Acts.AddInstanceVar,
 		C3.Plugins.System.Exps.layoutheight,
@@ -74,6 +76,7 @@ self.C3_JsPropNameTable = [
 	{Array_A: 0},
 	{Array_B: 0},
 	{Array_Shared: 0},
+	{Audio: 0},
 	{LivesRemaining: 0},
 	{Score: 0},
 	{Guess: 0},
@@ -97,5 +100,6 @@ self.InstanceType = {
 	MMLevel3: class extends self.ITextInstance {},
 	Array_A: class extends self.IArrayInstance {},
 	Array_B: class extends self.IArrayInstance {},
-	Array_Shared: class extends self.IArrayInstance {}
+	Array_Shared: class extends self.IArrayInstance {},
+	Audio: class extends self.IInstance {}
 }
